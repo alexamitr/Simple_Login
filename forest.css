@@ -1,0 +1,69 @@
+body {font-family: Arial, Helvetica, sans-serif;
+}
+
+.centertext{
+
+    text-align: center;
+    align-content: center;
+    align-items: center;
+
+}
+
+.righttext{
+    text-align: right;
+}
+
+
+.bclass{
+    background-image: url(2.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+button:hover {
+    opacity: 0.8;
+  
+}
+
+
+guest:hover{
+
+    background-color: yellow;
+}
+
+.cancelbtn {
+    border-radius: 25px;
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+
+h2.madtitle{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;   
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+
+    }
