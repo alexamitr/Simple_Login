@@ -21,3 +21,12 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+
+
+  var imgs = ["2.jpg", "3.jpg"];
+
+    function changeImage() {
+        document.getElementById("imgClickAndChange").src = imgs[0];
+        imgs.push(imgs.shift())
+        
+    }

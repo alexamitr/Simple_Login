@@ -10,9 +10,40 @@
 </head>
 <body  class="bclass">
 
+<h1 class="fr1 centertext">Welcome To Forestland</h1>
 
 
+<form action="/action_page.php" class="madform"> 
+
+<div class="container">
+        
+        <label for="uname" ><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+                
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+        <button type="submit">Login</button>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> 
+        </label>
     
+
+</div>
+            
+<div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+                
+</div>
+<p class="righttext"> <a href="home.html">Continue as guest</a></p>
+</form>
     
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script src="forest.js"></script>       
 </body>
 </html>
