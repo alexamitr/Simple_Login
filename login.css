@@ -63,7 +63,7 @@ input[type=text], input[type=password] {
     background-size: cover;
 }
 
-button {
+.button {
     border-radius: 15px;
     background-color: #883994;
     color: white;
@@ -92,6 +92,13 @@ guest:hover{
     background-color: #f44336;
 }
 
+
+.loginbtn {
+    border-radius: 25px;
+    width: auto;
+    padding: 10px 18px;
+    background-color: #064e2a;
+}
 .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;

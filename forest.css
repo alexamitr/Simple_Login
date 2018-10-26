@@ -1,12 +1,12 @@
 body {font-family: Arial, Helvetica, sans-serif;
 }
 
-form {border: 3px snow #FFFFFF;}
+form {border: 5px snow #FFFFFF;}
 
 input[type=text], input[type=password] {
     border-radius: 25px;
     width: 100%;
-    padding: 12px 20px;
+    padding: 14px 22px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -37,6 +37,17 @@ input[type=text], input[type=password] {
 button:hover {
     opacity: 0.8;
   
+}
+
+.banner{
+    width:620px;
+    height: 100px;
+    margin:7px auto;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    padding-left:190px;
 }
 
 
@@ -105,7 +116,7 @@ span.psw {
 
 
 
-button {
+.button {
     border-radius: 15px;
     background-color: #084d2d;
     color: white;
@@ -115,6 +126,21 @@ button {
     cursor: pointer;
     width: 100%;
 }
+
+
+.loginbtn {
+    border-radius: 25px;
+    width: auto;
+    padding: 10px 18px;
+    background-color: #064e2a;
+}
+.cancelbtn {
+    border-radius: 25px;
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
 
 button:hover {
     opacity: 0.8;
@@ -127,12 +153,7 @@ button:hover {
     background-color: yellow;
 }
 
-.cancelbtn {
-    border-radius: 25px;
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
+
 
 .imgcontainer {
     text-align: center;
