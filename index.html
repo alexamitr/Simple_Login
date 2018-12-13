@@ -16,24 +16,25 @@
   
   
 
-    <form action="/action_page.php" class="forestform">    
+    <form    id="myForm" class="forestform" name="formlogin" >    
       
     
       <div class="container">
         
         <label for="uname" class="uptextcolor centertext"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
+        <input type="text" placeholder="Enter Username" id="uname" name="uname" required>
         
         <label for="psw" class="uptextcolor centertext"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
             
-        <button type="submit">Login</button>
+        <button type="submit"  value="submit">Login</button>
         <label>
-          <input type="checkbox" checked="checked" name="remember"> 
+          <input type="checkbox" checked="checked" name="remember" id="remember"> 
+          <span style="color: #f1f1f1">Remember me</span>
         </label>
       </div>
     
-      <div class="container" style="background-color:#f1f1f1">
+      <div class="container" style="background-color:#f1f1f1 " >
         <button type="button" class="cancelbtn">Cancel</button>
         <span class="psw">Forgot <a href="#">password?</a></span>
         
@@ -41,9 +42,31 @@
       <p class="righttext"> <a href="home.html">Continue as guest</a></p>
     </form>
 
-
-
-
+    <script>
+      myForm.addEventListener("submit", function(e){
+      
+        var name = document.getElementById('uname');
+        var password = document.getElementById('psw');
+        var remember = document.getElementById('remember');
+        
+        
+        if(name.value=="admin" && password.value=="123")
+        {            
+            alert(uname.value);
+            alert(psw.value);
+            alert(remember.checked);
+            window.location.href = "https://github.com/alexamitr";    
+        }
+        else 
+        {
+          alert('Wrong username and/or password');
+        }
+        
+        e.preventDefault();
+      });
+      </script>
+ 
+ 
 
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
